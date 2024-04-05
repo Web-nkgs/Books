@@ -1,0 +1,6 @@
+<h1>Bienvenido</h1>
+<input *ngIf="isVisible" type="text" [(ngModel)]="username" />
+<button *ngIf="isVisible" (click)="addUser()">Agregar</button>
+<div *ngFor="let user of users">
+    {{ user }}
+</div>
