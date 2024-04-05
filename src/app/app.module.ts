@@ -10,6 +10,7 @@ import { BooksService } from './services/books.service';
 import { HomeComponent } from './home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 // Decorator: En Angular permite ser modificado antes de ser instanceado.
 @NgModule({
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   // Servicios.
   providers: [BooksService],
