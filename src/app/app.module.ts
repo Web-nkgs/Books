@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
 import { BooksService } from './services/books.service';
+import { HomeComponent } from './home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Decorator: En Angular permite ser modificado antes de ser instanceado.
 @NgModule({
@@ -15,12 +18,15 @@ import { BooksService } from './services/books.service';
     AppComponent,
     UserComponent,
     BooksComponent,
-    BookComponent
+    BookComponent,
+    HomeComponent
   ],
   // Importaremos modulos o directivas.
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   // Servicios.
   providers: [BooksService],
