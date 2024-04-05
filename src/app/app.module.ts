@@ -11,6 +11,8 @@ import { HomeComponent } from './home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { RegisterComponent } from './security/register/register.component';
+import { LoginComponent } from './security/login/login.component';
 
 // Decorator: En Angular permite ser modificado antes de ser instanceado.
 @NgModule({
@@ -20,7 +22,9 @@ import { MaterialModule } from './material.module';
     UserComponent,
     BooksComponent,
     BookComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   // Importaremos modulos o directivas.
   imports: [
