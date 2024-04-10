@@ -1,18 +1,14 @@
 <section>
-  <form>
+  <form class="flex" #form="ngForm" (ngSubmit)="registerUser(form)">
     <mat-form-field>
       <mat-label>Ingrese correo</mat-label>
-      <input type="email" matInput placeholder="bob@gmail.com" />
+      <input type="email" matInput placeholder="bob@gmail.com" ngModel name="email" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Ingrese contraseña</mat-label>
-      <input type="password" matInput placeholder="Ingrese contraseña" />
+      <input type="password" matInput placeholder="Ingrese contraseña" ngModel name="password" />
     </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Guardar</button>
   </form>
 </section>
 
-<section id="container">
-  <div id="element1" class="element"></div>
-  <div id="element2" class="element"></div>
-  <div id="element3" class="element"></div>
-</section>
